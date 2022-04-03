@@ -125,7 +125,7 @@ img{
     height: 80vh;
 }
 
-form{
+.form{
     background-color: #3969b2;
     height: 300px;
     width: 400px;
@@ -134,9 +134,16 @@ form{
     margin-left: 500px;
 }
 
+form{
+    text-align: center;
+    padding: 40px;
+}
+
 footer{
     background-color: #3969b2;
-    height: 20vh;
+    height: 11vh;
+    padding: 0;
+    margin: 0;
 }
 button {
     background-color: #3969b2;
