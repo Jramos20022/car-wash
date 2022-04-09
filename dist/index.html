@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detailing Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+      </script>
+<body>
+    <!--Start of Header and Nav Bar-->
+    <header class="bg-white flex flex-wrap items-center h-30 p-9 font-mono">
+                <nav class="flex-1 flex justify-between items-center ">
+    
+                   <a href="#" class="p-2 mr-4 inline-flex items-center">
+                       <img width="350" class="m-0 p-0" src="../assets/images/logo.png" alt="logo">
+                   </a>
+                    <div class="">
+            
+                        <a href="#" class="inline-flex p-3 hover:text-blue-600">
+                            <span>Home</span> 
+                        </a>
+                        <a href="#" class="inline-flex p-3 hover:text-blue-600"> 
+                            <span> About Us </span>
+                        </a>
+                        <a href="#" class="inline-flex p-3 hover:text-blue-600">
+                            <span> Services / Packages </span>
+                        </a> 
+                        <a href="#" class="inline-flex p-3 hover:text-blue-600">
+                            <span> Schedule </span>
+                        </a>
+                    </div>
+                </nav>
+    </header>
+
+    <section class="container bg-white relative h-screen font-mono relative">
+            <div class="text-5xl p-3 text-blue-600">
+                <h3 class="">Where professional detailing <br> meets custom design <br> and flawless results.</h3>
+            </div>
+        <div class="relative float-right"
+        <img class="w-1/4 h-1/4 shadow-black shadow-2xl" src="../assets/images/wheel.jpg" alt="Dashboard being detailed">
+    </div>
+          <img class="w-2/6 h-2/6 m-7 shadow-black shadow-2xl" src="../assets/images/detailing.jpg" alt="Detailing a car">
+          <div class="w-96 float-right ">
+              <p>We understand how sometimes life can get extremely busy and cleaning your car is last on your list.Not to worry though! Hire <b>In A Rush Car Wash</b> to get your car looking great again. We bring the Car Wash to you! Check out our car wash packages and schedule today!</p>
+          </div>
+            <div class="container w-96 inline-block ml-36 mt-10 text-xl ">
+                <p>Taking pride in detailing cars is a great way to show your love for your vehicle. Not only will it keep your car looking its best, but it can also help protect the finish from the elements.
+                </p>
+         
+    </section>
+
+    <section class="bg-blue-600 h-full">
+
+        <div class="text-center text-white text-5xl p-6 font-semibold">
+            <h2>Services / Packages </h2>
+        </div>
+        <div class="columns-3 items-center justify-center m-6">
+            <div class="container bg-white h-2/5">
+            <h4 class="text-center"> Standard Detail</h4>
+                <ul class="text-center">
+                    <li>Exterior car wash</li>
+                    <li>Interior vaccum</li>
+                </ul>
+
+                <p class="text-center">Base Pay: $20</p>
+
+                <button class="text-center">Read More</button>
+            </div>
+            <div class="container bg-white">
+            <h4 class="text-center"> Deluxe Detail </h4>
+                <ul class="text-center">
+                    <li>Exterior Hand Wash</li>
+                    <li>Interior/Exterior Window Wash</li>
+                    <li>Dashboard clean</li>
+                </ul> 
+
+                <p class="text-center">Base Pay: $40</p>
+
+                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
+                
+            </div>
+            <div class="container bg-white">
+            <h4 class="text-center"> Ultimate Detail </h4>
+                <ul class="text-center">
+                    <li>Exterior Hand Wash</li>
+                    <li>Ceramic Coat</li>
+                    <li>Door Jams cleaned</li>
+                    <li>Carpets Shampooed and conditioned</li>
+                    <li>Leather conditioned and polished</li>
+                    <li>Clothe seats shampooed and extracted</li>
+                </ul>
+
+                <p class="text-center">Base Pay: $60</p>
+
+                <button class="text-center">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="schedule-service">
+        <div class="bg-slate-100 mx-44">
+            <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 ">
+                <div>
+                <label for="name">Full Name</label>
+                <input class=" border-grey-600 block py-2 px-2 w-full rounded" type="text" id="name" name="name">
+                </div>
+                <div>
+                <label for="number">Phone Number</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="number">
+                </div>
+                <div>
+                <label for="address">Location of Vheicle</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="adress">
+                </div>
+                <div>
+                <label for="city">City</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="city" name="city">
+                </div>
+                <div>
+                <label for="state">State</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="state" name="state">
+                </div>
+                <div>
+                <label for="zipcode">Zipcode</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="zipcode">
+                </div>
+                <div class="">
+                     <select class="border-grey-600 block py-2 px-2 w-full rounded" required>
+                         <option value="" disabled selected>Which type of vehicle do you have?</option>
+                         <option value="Sedan">Sedan</option>
+                         <option value="SUV">SUV</option>
+                        <option value="Van">Van</option>
+                         <option value="Truck">Truck</option>
+                         </select>
+                </div>
+                <button class="rounded p-5 bg-blue-600 text-white">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 p-4 flex">
+        
+        <div class="justify-start mr-72"
+            <h2>In a Rush Car Wash</h2>
+            <h3>954-390-0000</h3>
+        </div>
+        <div class="justify-end ml-96" >
+          <p>Created by: Gretthel Luna, Justin Ramos, & John Pham </p>
+          &copy; 2022
+        </div>   
+    </footer>
+    
+</body>
+</html>
