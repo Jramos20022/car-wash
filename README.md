@@ -8,9 +8,13 @@ A website to request car wash / detailing services for busy people.  The site al
 * CSS
 * Javascript
 * Google Calendar API
+* SheetDB API
 
 ## Website
 https://gluna1982.github.io/car-wash/
 
+## Google Sheets Link
+https://docs.google.com/spreadsheets/d/1hSr3a-YKlWCXKG0r7vJJ2jNasGlvQNnBYLrRJR6k6Pg/edit?usp=sharing
+
 ## Contribution
-Gretthel Luna, Justin Ramos
+Gretthel Luna, Justin Ramos and John Pham
