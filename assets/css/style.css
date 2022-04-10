@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+}
+
+.nav-bar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: fff;
+}
+.logo{
+    height: 80px;
+    width: auto;
+    margin-top: 0;
+    box-shadow: none;
+}
+
+.nav{
+    margin-left: 300px;
+
+}
+
+.nav li{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 50px;
+    font-size: 15px;
+}
+
+.hero{
+    display: flex;
+}
+
+.slogan{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 80px ;
+    color: #3969b2 ;
+}
+
+img{
+    margin-top: 30px;
+    margin-left: 40px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, .8);
+}
+
+.mission-statement{
+    position:absolute;
+    padding: 0;
+    background-color: fff;
+    height: auto;
+    width:auto;
+    display: inline-block;
+    margin-left: 190px;
+    margin-right: 180px;
+    font-size: 18px;
+}
+
+.wheel-img{
+    width: 300px;
+    margin-left: 160px;
+}
+
+.packages{
+    background-color: #3969b2 ;
+    height: 100vh;
+}
+
+.services {
+    display: grid ;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4em;
+    margin-top: 3em;
+}
+
+.title {
+    justify-content: space-around;
+    margin-left: 530px;
+    color: fff;
+    font-size: 30px;
+}
+
+.cards{
+    padding: 15px;
+    background-color: ghostwhite;
+    height: 500px;
+    width: 350;
+    justify-content: space-around;
+    margin: 15px;
+    margin-top: 100px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .8);
+}
+
+.cards h4 {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.cards li {
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+}
+
+.cards p {
+    margin: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.schedule-service{
+    background-color: fff;
+    height: 80vh;
+}
+
+.form{
+    background-color: #3969b2;
+    height: 300px;
+    width: 400px;
+    align-content: center;
+    margin-top: 250px;
+    margin-left: 500px;
+}
+
+form{
+    text-align: center;
+    padding: 40px;
+}
+
+footer{
+    background-color: #3969b2;
+    height: 11vh;
+    padding: 0;
+    margin: 0;
+}
+button {
+    background-color: #3969b2;
+    color: fff;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+}
