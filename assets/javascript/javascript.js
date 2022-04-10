@@ -1,27 +1,17 @@
-//Form Variables
-const form = document.getElementById('reservation');
-const fname = form.elements['name'];
-const phNumber = form.elements['number'];
-const address = form.elements['address'];
-const city = form.elements['city'];
-const state = form.elements['state'];
-const zipCode = form.elements['zipcode'];
-const pckgSelected = form.elements['package'];
-const car = form.elements['car'];
-const date = form.elements['date'];
-const hour = form.elements['hour'];
-
+var 
+// Sends form information to Google Sheet
+var form = document.getElementById('reservation');
 form.addEventListener("submit",function(event){
-    let fullName = console.log(name.value);
-    let number = console.log(phNumber.value);
-    let location = console.log(address.value);
-    let locationCity = city.value;
-    let locationState = state.value;
-    let locationZipcode = zipCode.value;
-    let pckg = pckgSelected.value;
-    let vCar = car.value;
-    let day = date.value;
-    let time = hour.value;
-
+    event.preventDefault();
+    fetch(form.action,{
+        method: "POST",
+        body: new FormData(document.getElementById('reservation'))
+    }).then(()=>{
+        document.getElementById('message').innerHTML="Thank you, your reservation is set";
+    })
 });
 
+function createEvent () {
+    const calendar = '853474722699-6gmq2orobce9vte5bv48qsmuvgutob77.apps.googleusercontent.com';
+
+}
