@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Detailing Service</title>
+    <!--Tailwind Script and link-->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,7 +18,7 @@
         }
       </script>
 <body>
-    <!--Start of Header and Nav Bar-->
+<!--Start of Header and Nav Bar-->
     <header class="bg-white flex flex-wrap items-center h-30 p-9 font-mono">
                 <nav class="flex-1 flex justify-between items-center ">
     
@@ -41,12 +42,12 @@
                     </div>
                 </nav>
     </header>
-
+<!--Hero Section-->
     <section class="container bg-white relative h-screen font-mono relative">
             <div class="text-5xl p-3 text-blue-600">
                 <h3 class="">Where professional detailing <br> meets custom design <br> and flawless results.</h3>
             </div>
-        <div class="relative float-right"
+        <div class="relative float-right">
         <img class="w-1/4 h-1/4 shadow-black shadow-2xl" src="../assets/images/wheel.jpg" alt="Dashboard being detailed">
     </div>
           <img class="w-2/6 h-2/6 m-7 shadow-black shadow-2xl" src="../assets/images/detailing.jpg" alt="Detailing a car">
@@ -58,13 +59,14 @@
                 </p>
          
     </section>
-
+<!--Packages offered Section-->
     <section class="bg-blue-600 h-full">
 
         <div class="text-center text-white text-5xl p-6 font-semibold">
             <h2>Services / Packages </h2>
         </div>
         <div class="columns-3 items-center justify-center m-6">
+            <!--Standard package-->
             <div class="container bg-white h-2/5">
             <h4 class="text-center"> Standard Detail</h4>
                 <ul class="text-center">
@@ -74,9 +76,10 @@
 
                 <p class="text-center">Base Pay: $20</p>
 
-                <button class="text-center">Read More</button>
+                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
             </div>
-            <div class="container bg-white">
+            <!--Deluxe package-->
+            <div class="container bg-white h-2/5">
             <h4 class="text-center"> Deluxe Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
@@ -89,7 +92,8 @@
                 <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
                 
             </div>
-            <div class="container bg-white">
+            <!--Ultimate package-->
+            <div class="container bg-white h-2/5">
             <h4 class="text-center"> Ultimate Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
@@ -102,12 +106,15 @@
 
                 <p class="text-center">Base Pay: $60</p>
 
-                <button class="text-center">Read More</button>
+                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
             </div>
         </div>
     </section>
+
+<!--Appointment Section-->
     <section class="schedule-service">
         <div class="bg-slate-100 mx-44">
+            <!--Start of form-->
             <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 ">
                 <div>
                 <label for="name">Full Name</label>
@@ -118,7 +125,7 @@
                 <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="number">
                 </div>
                 <div>
-                <label for="address">Location of Vheicle</label>
+                <label for="address">Location of Vehicle</label>
                 <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="adress">
                 </div>
                 <div>
@@ -133,23 +140,55 @@
                 <label for="zipcode">Zipcode</label>
                 <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="zipcode">
                 </div>
+                <!--Package selection-->
                 <div class="">
                      <select class="border-grey-600 block py-2 px-2 w-full rounded" required>
-                         <option value="" disabled selected>Which type of vehicle do you have?</option>
-                         <option value="Sedan">Sedan</option>
-                         <option value="SUV">SUV</option>
-                        <option value="Van">Van</option>
-                         <option value="Truck">Truck</option>
-                         </select>
+                         <option value="" disabled selected>Which package would you like to get?</option>
+                         <option value="Standard_Detail">Standard Detail</option>
+                         <option value="Deluxe_Detail">Deluxe Detail</option>
+                         <option value="Ultimate_Detail">Ultimate Detail</option>
+                     </select>
                 </div>
+                <!--Type of car-->
+                <div class="">
+                    <select class="border-grey-600 block py-2 px-2 w-full rounded" required>
+                        <option value="" disabled selected>Which type of vehicle do you have?</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Van">Van</option>
+                        <option value="Truck">Truck</option>
+                    </select>
+               </div>
+               <!--Select Date-->
+               <div class="">
+                <label for="date"required>Select a Date:</label>
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="date" id="date" name="date">
+               </div>
+               <!--Select Time-->
+               <div>
+                <select class="border-grey-600 block py-2 px-2 w-full rounded" required>
+                    <option value="" disabled selected>Select a Time</option>
+                    <option value="9am">9:00 am</option>
+                    <option value="10am">10:00 am</option>
+                    <option value="11am">11:00 am</option>
+                    <option value="12pm">12:00 pm</option>
+                    <option value="1pm">1:00 pm</option>
+                    <option value="2pm">2:00 pm</option>
+                    <option value="3pm">3:00 pm</option>
+                    <option value="4pm">4:00 pm</option>
+                    <option value="5pm">5:00 pm</option>
+                    <option value="6pm">6:00 pm</option>
+                    <option value="7pm">7:00 pm</option>
+                </select>
+               </div>
                 <button class="rounded p-5 bg-blue-600 text-white">Submit</button>
             </form>
         </div>
     </section>
-
+<!--Footer-->
     <footer class="bg-blue-600 p-4 flex">
         
-        <div class="justify-start mr-72"
+        <div class="justify-start mr-72">
             <h2>In a Rush Car Wash</h2>
             <h3>954-390-0000</h3>
         </div>
