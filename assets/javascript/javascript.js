@@ -8,6 +8,6 @@ form.addEventListener("submit", function(event){
     }).then(
         response => response.json()
     ).then((html)=>{
-        document.getElementById('message').innerHTML = "Your reservation has been made.";
-    })
-})
+        document.getElementById('message').innerHTML="Your reservation has been made.";
+    });
+});
