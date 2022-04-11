@@ -18,22 +18,16 @@
         }
       </script>
       <!--Javascript external link-->
-      <script src="../assets/javascript/javascript.js"></script>
+      <script src="./assets/javascript/javascript.js"></script>
 <!--Start of Body-->      
-<body>
-<<<<<<< HEAD
-    <!--Start of Header and Nav Bar-->
-    <header class="bg-white flex flex-wrap items-center h-15 p-2 font-mono">
-=======
+<body class="font-mono">
 <!--Start of Header and Nav Bar-->
-    <header class="bg-white flex flex-wrap items-center h-30 p-9 font-mono" id="home">
->>>>>>> dd42aec25128f764bf98fa46ed51971d329632d0
-                <nav class="flex-1 flex justify-between items-center ">
+                <nav class="bg-white flex-wrap flex w-full justify-between items-center p-1" id="home">
     
-                   <a href="#" class="p-2 mr-4 inline-flex items-center">
-                       <img width="350" class="m-0 p-0" src="../assets/images/logo.png" alt="logo">
+                   <a href="#" class="p-0 mr-4 inline-flex items-center">
+                       <img width="350" class="m-0 p-0" src="./assets/images/logo.png" alt="logo">
                    </a>
-                    <div class="">
+                    <div class="text-2xl">
             
                         <a href="#home" class="inline-flex p-3 hover:text-blue-600">
                             <span>Home</span> 
@@ -49,22 +43,30 @@
                         </a>
                     </div>
                 </nav>
-    </header>
+
 <!--Hero Section-->
-    <section class="container bg-white relative h-screen font-mono relative" id="hero">
+    <section class="container bg-white relative h-screen w-full font-mono relative " id="hero">
+        
             <div class="text-5xl p-3 text-blue-600">
                 <h3 class="">Where professional detailing <br> meets custom design <br> and flawless results.</h3>
             </div>
-        <div class="relative float-right">
-        <img class="w-1/4 h-1/4 shadow-black shadow-2xl" src="../assets/images/wheel.jpg" alt="Dashboard being detailed">
-    </div>
-          <img class="w-2/6 h-2/6 m-7 shadow-black shadow-2xl" src="../assets/images/detailing.jpg" alt="Detailing a car">
-          <div class="w-96 float-right ">
-              <p>We understand how sometimes life can get extremely busy and cleaning your car is last on your list.Not to worry though! Hire <b>In A Rush Car Wash</b> to get your car looking great again. We bring the Car Wash to you! Check out our car wash packages and schedule today!</p>
+        <div class="flex flex-row">
+            <div class="pl-14 pt-14">
+          <img class="w-3/6 h-5/6 shadow-black shadow-2xl" src="./assets/images/detailing.jpg" alt="Detailing a car">
           </div>
-            <div class="container w-96 inline-block ml-36 mt-10 text-xl ">
+             <div class="container flex w-96 pt-8 pl-24 pb-5">
+            <p>We understand how sometimes life can get extremely busy and cleaning your car is last on your list.Not to worry though! Hire <b>In A Rush Car Wash</b> to get your car looking great again. We bring the Car Wash to you! Check out our car wash packages and schedule today!</p>
+            </div>
+        </div>
+        <div class="flex flex-row">
+            <div class="container w-96 inline-block ml-36 mt-1 text-xl pt-14">
                 <p>Taking pride in detailing cars is a great way to show your love for your vehicle. Not only will it keep your car looking its best, but it can also help protect the finish from the elements.
                 </p>
+            </div>
+            <div class="pl-52">
+                <img class="w-100% h-4/6 shadow-black shadow-2xl" src="./assets/images/wheel.jpg" alt="Dashboard being detailed">
+            </div>
+        </div>
          
     </section>
 <!--Packages offered Section-->
@@ -73,36 +75,38 @@
         <div class="text-center text-white text-5xl p-6 font-semibold">
             <h2>Service Packages </h2>
         </div>
-        <div class="columns-3 items-center justify-center m-6">
+        <div class="columns-3 flex items-center justify-around m-6 pt-28">
             <!--Standard package-->
-            <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Standard Detail</h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+            <h4 class="text-center font-semibold pb-5"> Standard Detail</h4>
                 <ul class="text-center">
                     <li>Exterior car wash</li>
                     <li>Interior vaccum</li>
                 </ul>
 
-                <p class="text-center">Base Pay: $20</p>
+                <p class="text-center font-semibold pt-7 pb-5">Base Pay: $20</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
+                <div class="flex justify-center">
+                    <button class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black">Read More</button>
+                </div>
             </div>
             <!--Deluxe package-->
-            <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Deluxe Detail </h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+            <h4 class="text-center font-semibold pb-5"> Deluxe Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
                     <li>Interior/Exterior Window Wash</li>
                     <li>Dashboard clean</li>
                 </ul> 
 
-                <p class="text-center">Base Pay: $40</p>
-
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
-                
+                <p class="text-center font-semibold pt-7 pb-5">Base Pay: $40</p>
+            <div class="flex justify-center">
+                <button class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black">Read More</button>
+            </div>
             </div>
             <!--Ultimate package-->
-            <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Ultimate Detail </h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+            <h4 class="text-center font-semibold pb-5"> Ultimate Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
                     <li>Ceramic Coat</li>
@@ -112,9 +116,11 @@
                     <li>Clothe seats shampooed and extracted</li>
                 </ul>
 
-                <p class="text-center">Base Pay: $60</p>
+                <p class="text-center font-semibold pb-5 pt-7">Base Pay: $60</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
+                <div class="flex justify-center">
+                    <button class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black">Read More</button>
+                </div>
             </div>
         </div>
     </section>
@@ -122,40 +128,39 @@
 <!--Appointment Section-->
     <section class="schedule-service" id="schedule">
         <div class="bg-slate-100 mx-44">
-            <!--Start of form:
-            action field is Google Sheets API key-->
-            <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 " id="reservation" action="https://sheetdb.io/api/v1/e5edm3derqp2x" method="post">
+            <!--Start of form-->
+            <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 " id="reservation">
                 <div>
                 <label for="name">Full Name</label>
-                <input class=" border-grey-600 block py-2 px-2 w-full rounded" type="text" id="name" name="data[name]">
+                <input class=" border-grey-600 block py-2 px-2 w-full rounded" type="text" id="name" name="name">
                 </div>
                 <div>
                 <label for="number">Phone Number</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="data[number]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="number">
                 </div>
                 <div>
                 <label for="email">Email</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="email" name="data[email]">    
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="email" name="email">    
                 </div>
                 <div>
                 <label for="address">Location of Vehicle</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="data[address]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="adress">
                 </div>
                 <div>
                 <label for="city">City</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="city" name="data[city]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="city" name="city">
                 </div>
                 <div>
                 <label for="state">State</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="state" name="data[state]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="state" name="state">
                 </div>
                 <div>
                 <label for="zipcode">Zipcode</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="data[zipcode]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="zipcode">
                 </div>
                 <!--Package selection-->
                 <div class="">
-                     <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="package" name="data[package]">
+                     <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="package">
                          <option value="" disabled selected>Which package would you like to get?</option>
                          <option value="Standard_Detail">Standard Detail</option>
                          <option value="Deluxe_Detail">Deluxe Detail</option>
@@ -164,7 +169,7 @@
                 </div>
                 <!--Type of car-->
                 <div class="">
-                    <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="car" name="data[car]">
+                    <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="car">
                         <option value="" disabled selected>Which type of vehicle do you have?</option>
                         <option value="Sedan">Sedan</option>
                         <option value="SUV">SUV</option>
@@ -175,11 +180,11 @@
                <!--Select Date-->
                <div class="">
                 <label for="date"required>Select a Date:</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="date" id="date" name="data[date]">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="date" id="date" name="date">
                </div>
                <!--Select Time-->
                <div>
-                <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="hour" name="data[hour]">
+                <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="hour">
                     <option value="" disabled selected>Select a Time</option>
                     <option value="9am">9:00 am</option>
                     <option value="10am">10:00 am</option>
@@ -193,10 +198,6 @@
                     <option value="6pm">6:00 pm</option>
                     <option value="7pm">7:00 pm</option>
                 </select>
-               </div>
-               <div>
-                   <p id="total"></p>
-                   <p id="message"></p>
                </div>
                 <button type="submit" class="rounded p-5 bg-blue-600 text-white">Reserve</button>
             </form>
