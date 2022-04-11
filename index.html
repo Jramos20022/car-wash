@@ -128,39 +128,40 @@
 <!--Appointment Section-->
     <section class="schedule-service" id="schedule">
         <div class="bg-slate-100 mx-44">
-            <!--Start of form-->
-            <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 " id="reservation">
+            <!--Start of form:
+            action field is Google Sheets API key-->
+            <form class="px-4 my-32 max-w-3xl mx-auto space-y-6 p-6 " id="reservation" action="https://sheetdb.io/api/v1/e5edm3derqp2x" method="post">
                 <div>
                 <label for="name">Full Name</label>
-                <input class=" border-grey-600 block py-2 px-2 w-full rounded" type="text" id="name" name="name">
+                <input class=" border-grey-600 block py-2 px-2 w-full rounded" type="text" id="name" name="data[name]">
                 </div>
                 <div>
                 <label for="number">Phone Number</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="number">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="number" name="data[number]">
                 </div>
                 <div>
                 <label for="email">Email</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="email" name="email">    
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="email" name="data[email]">    
                 </div>
                 <div>
                 <label for="address">Location of Vehicle</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="adress">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="address" name="data[address]">
                 </div>
                 <div>
                 <label for="city">City</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="city" name="city">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="city" name="data[city]">
                 </div>
                 <div>
                 <label for="state">State</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="state" name="state">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="state" name="data[state]">
                 </div>
                 <div>
                 <label for="zipcode">Zipcode</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="zipcode">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="text" id="zipcode" name="data[zipcode]">
                 </div>
                 <!--Package selection-->
                 <div class="">
-                     <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="package">
+                     <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="package" name="data[package]">
                          <option value="" disabled selected>Which package would you like to get?</option>
                          <option value="Standard_Detail">Standard Detail</option>
                          <option value="Deluxe_Detail">Deluxe Detail</option>
@@ -169,7 +170,7 @@
                 </div>
                 <!--Type of car-->
                 <div class="">
-                    <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="car">
+                    <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="car" name="data[car]">
                         <option value="" disabled selected>Which type of vehicle do you have?</option>
                         <option value="Sedan">Sedan</option>
                         <option value="SUV">SUV</option>
@@ -180,11 +181,11 @@
                <!--Select Date-->
                <div class="">
                 <label for="date"required>Select a Date:</label>
-                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="date" id="date" name="date">
+                <input class="border-grey-600 block py-2 px-2 w-full rounded" type="date" id="date" name="data[date]">
                </div>
                <!--Select Time-->
                <div>
-                <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="hour">
+                <select class="border-grey-600 block py-2 px-2 w-full rounded" required id="hour" name="data[hour]">
                     <option value="" disabled selected>Select a Time</option>
                     <option value="9am">9:00 am</option>
                     <option value="10am">10:00 am</option>
@@ -198,6 +199,10 @@
                     <option value="6pm">6:00 pm</option>
                     <option value="7pm">7:00 pm</option>
                 </select>
+               </div>
+               <div>
+                   <p id="total"></p>
+                   <p id="message"></p>
                </div>
                 <button type="submit" class="rounded p-5 bg-blue-600 text-white">Reserve</button>
             </form>
