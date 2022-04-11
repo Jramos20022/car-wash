@@ -20,15 +20,14 @@
       <!--Javascript external link-->
       <script src="./assets/javascript/javascript.js"></script>
 <!--Start of Body-->      
-<body>
+<body class="font-mono">
 <!--Start of Header and Nav Bar-->
-    <header class="bg-white flex flex-wrap items-center h-30 p-9 font-mono" id="home">
-                <nav class="flex-1 flex justify-between items-center ">
+                <nav class="bg-white flex-wrap flex w-full justify-between items-center p-1" id="home">
     
-                   <a href="#" class="p-2 mr-4 inline-flex items-center">
+                   <a href="#" class="p-0 mr-4 inline-flex items-center">
                        <img width="350" class="m-0 p-0" src="./assets/images/logo.png" alt="logo">
                    </a>
-                    <div class="">
+                    <div class="text-2xl">
             
                         <a href="#home" class="inline-flex p-3 hover:text-blue-600">
                             <span>Home</span> 
@@ -44,22 +43,30 @@
                         </a>
                     </div>
                 </nav>
-    </header>
+
 <!--Hero Section-->
-    <section class="container bg-white relative h-screen font-mono relative" id="about-us">
+    <section class="container bg-white relative h-screen w-full font-mono relative " id="hero">
+        
             <div class="text-5xl p-3 text-blue-600">
                 <h3 class="">Where professional detailing <br> meets custom design <br> and flawless results.</h3>
             </div>
-        <div class="relative float-right">
-        <img class="w-1/4 h-1/4 shadow-black shadow-2xl" src="./assets/images/wheel.jpg" alt="Dashboard being detailed">
-    </div>
-          <img class="w-2/6 h-2/6 m-7 shadow-black shadow-2xl" src="./assets/images/detailing.jpg" alt="Detailing a car">
-          <div class="w-96 float-right ">
-              <p>We understand how sometimes life can get extremely busy and cleaning your car is last on your list.Not to worry though! Hire <b>In A Rush Car Wash</b> to get your car looking great again. We bring the Car Wash to you! Check out our car wash packages and schedule today!</p>
+        <div class="flex flex-row">
+            <div class="pl-14 pt-14">
+          <img class="w-3/6 h-5/6 shadow-black shadow-2xl" src="./assets/images/detailing.jpg" alt="Detailing a car">
           </div>
-            <div class="container w-96 inline-block ml-36 mt-10 text-xl ">
+             <div class="container flex w-96 pt-8 pl-24 pb-5">
+            <p>We understand how sometimes life can get extremely busy and cleaning your car is last on your list.Not to worry though! Hire <b>In A Rush Car Wash</b> to get your car looking great again. We bring the Car Wash to you! Check out our car wash packages and schedule today!</p>
+            </div>
+        </div>
+        <div class="flex flex-row">
+            <div class="container w-96 inline-block ml-36 mt-1 text-xl pt-14">
                 <p>Taking pride in detailing cars is a great way to show your love for your vehicle. Not only will it keep your car looking its best, but it can also help protect the finish from the elements.
                 </p>
+            </div>
+            <div class="pl-52">
+                <img class="w-100% h-4/6 shadow-black shadow-2xl" src="./assets/images/wheel.jpg" alt="Dashboard being detailed">
+            </div>
+        </div>
          
     </section>
 <!--Packages offered Section-->
@@ -68,18 +75,20 @@
         <div class="text-center text-white text-5xl p-6 font-semibold">
             <h2>Service Packages </h2>
         </div>
-        <div class="columns-3 items-center justify-center m-6">
+        <div class="columns-3 flex items-center justify-around m-6 pt-28">
             <!--Standard package-->
-            <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Standard Detail</h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+            <h4 class="text-center font-semibold pb-5"> Standard Detail</h4>
                 <ul class="text-center">
                     <li>Exterior car wash</li>
                     <li>Interior vacuum</li>
                 </ul>
 
-                <p class="text-center">Base Pay: $20</p>
+                <p class="text-center font-semibold pt-7 pb-5">Base Pay: $20</p>
 
-                <button data-modal-target="#modal" class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-standard')">Read More</button>
+                <div class="flex justify-center">
+                    <button data-modal-target="#modal" class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black" type="button" onclick="toggleModal('modal-standard')">Read More</button>
+                </div>
                 <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-standard">
                     <div class="relative w-auto my-6 mx-auto max-w-3xl">
                       <!--modal content-->
@@ -113,17 +122,18 @@
                   <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-standard-backdrop"></div>
             </div>
             <!--Deluxe package-->
-            <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Deluxe Detail </h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+            <h4 class="text-center font-semibold pb-5"> Deluxe Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
                     <li>Interior/Exterior Window Wash</li>
                     <li>Dashboard clean</li>
                 </ul> 
 
-                <p class="text-center">Base Pay: $40</p>
-
-                <button class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-deluxe')">Read More</button>
+                <p class="text-center font-semibold pt-7 pb-5">Base Pay: $40</p>
+                <div class="flex justify-center">
+                    <button class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black" type="button" onclick="toggleModal('modal-deluxe')">Read More</button>
+                </div>
                 <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-deluxe">
                     <div class="relative w-auto my-6 mx-auto max-w-3xl">
                       <!--modal content-->
@@ -157,8 +167,8 @@
                   <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-deluxe-backdrop"></div>
             </div>
             <!--Ultimate package-->
-            <div class="container bg-white h-2/5">
-                <h4 class="text-center"> Ultimate Detail </h4>
+            <div class="w-72 h-3/5 p-4 bg-white rounded-xl">
+                <h4 class="text-center font-semibold pb-5"> Ultimate Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
                     <li>Ceramic Coat</li>
@@ -168,9 +178,11 @@
                     <li>Clothe seats shampooed and extracted</li>
                 </ul>
 
-                <p class="text-center">Base Pay: $60</p>
+                <p class="text-center font-semibold pb-5 pt-7">Base Pay: $60</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-ultimate')">Read More</button>
+                <div class="flex justify-center">
+                    <button class="text-center bg-blue-600 rounded text-white py-2 px-4 hover:text-black" type="button" onclick="toggleModal('modal-ultimate')">Read More</button>
+                </div>
                 <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-ultimate">
                     <div class="relative w-auto my-6 mx-auto max-w-3xl">
                       <!--modal content-->
