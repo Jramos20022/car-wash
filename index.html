@@ -33,11 +33,11 @@
                         <a href="#home" class="inline-flex p-3 hover:text-blue-600">
                             <span>Home</span> 
                         </a>
-                        <a href="#hero" class="inline-flex p-3 hover:text-blue-600"> 
+                        <a href="#about-us" class="inline-flex p-3 hover:text-blue-600"> 
                             <span> About Us </span>
                         </a>
                         <a href="#services" class="inline-flex p-3 hover:text-blue-600">
-                            <span> Service Packages </span>
+                            <span> Services / Packages </span>
                         </a> 
                         <a href="#schedule" class="inline-flex p-3 hover:text-blue-600">
                             <span> Schedule </span>
@@ -46,7 +46,7 @@
                 </nav>
     </header>
 <!--Hero Section-->
-    <section class="container bg-white relative h-screen font-mono relative" id="hero">
+    <section class="container bg-white relative h-screen font-mono relative" id="about-us">
             <div class="text-5xl p-3 text-blue-600">
                 <h3 class="">Where professional detailing <br> meets custom design <br> and flawless results.</h3>
             </div>
@@ -74,12 +74,43 @@
             <h4 class="text-center"> Standard Detail</h4>
                 <ul class="text-center">
                     <li>Exterior car wash</li>
-                    <li>Interior vaccum</li>
+                    <li>Interior vacuum</li>
                 </ul>
 
                 <p class="text-center">Base Pay: $20</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
+                <button data-modal-target="#modal" class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-standard')">Read More</button>
+                <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-standard">
+                    <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                      <!--modal content-->
+                      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <!--modal header-->
+                        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                          <h3 class="text-3xl font-semibold">
+                            Standard Detailing
+                          </h3>
+                          <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-standard')"></button>
+                        </div>
+                        <!--modal body-->
+                        <div class="relative p-6 flex-auto">
+                          <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                            We guarantee the best car washing experience with our state of the art facility. 
+                            Your vehicle is coated with our signiture brand soaps that instantly removes
+                            dirt with our premium quality bristles that keeps your car clean, streak free, and shining for weeks.
+                            Our well trained staff hand dries any residual moistures off your vehicle and directs you to our free, 
+                            all inclusive vacuums and carpet cleaners. 
+                          </p>
+                        </div>
+                        <!--modal footer-->
+                        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                          <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-standard')">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-standard-backdrop"></div>
             </div>
             <!--Deluxe package-->
             <div class="container bg-white h-2/5">
@@ -92,12 +123,42 @@
 
                 <p class="text-center">Base Pay: $40</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
-                
+                <button class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-deluxe')">Read More</button>
+                <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-deluxe">
+                    <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                      <!--modal content-->
+                      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <!--modal header-->
+                        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                          <h3 class="text-3xl font-semibold">
+                            Deluxe Detailing
+                          </h3>
+                          <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-deluxe')"></button>
+                        </div>
+                        <!--modal body-->
+                        <div class="relative p-6 flex-auto">
+                          <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                            Our deluxe detailing is services by our well trained staff that pays
+                            extreme attention to detail. Your vehicle is hand washed with our
+                            signiture brand soaps that takes off even the toughest dirt. The interior
+                            is dusted, scrubbed, and polished with a special formula that repels dust
+                            from forming, leaving your car fresh for weeks.
+                          </p>
+                        </div>
+                        <!--modal footer-->
+                        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                          <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-deluxe')">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-deluxe-backdrop"></div>
             </div>
             <!--Ultimate package-->
             <div class="container bg-white h-2/5">
-            <h4 class="text-center"> Ultimate Detail </h4>
+                <h4 class="text-center"> Ultimate Detail </h4>
                 <ul class="text-center">
                     <li>Exterior Hand Wash</li>
                     <li>Ceramic Coat</li>
@@ -109,7 +170,41 @@
 
                 <p class="text-center">Base Pay: $60</p>
 
-                <button class="text-center bg-blue-600 rounded text-white p-2">Read More</button>
+                <button class="text-center bg-blue-600 rounded text-white p-2" type="button" onclick="toggleModal('modal-ultimate')">Read More</button>
+                <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-ultimate">
+                    <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                      <!--modal content-->
+                      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <!--modal header-->
+                        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                          <h3 class="text-3xl font-semibold">
+                            Ultimate Detailing
+                          </h3>
+                          <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-ultimate')"></button>
+                        </div>
+                        <!--modal body-->
+                        <div class="relative p-6 flex-auto">
+                          <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                            The ultimate detailing service your car deserves!</br>
+                            Our deluxe detailing is services by our well trained staff that pays
+                            extreme attention to detail. Your vehicle is given the deluxe quality 
+                            detailing with our ultimate quality brand soaps and polishes. Your 
+                            interior and carpets are hand cleaned with our tough carpet cleaners 
+                            that'll make it feel brand new again. Seats are shampooed and removed 
+                            with our high powered vacuums to removes the toughest stains and leather 
+                            seats are lathered in our special forumla to keep it clean and shining.
+                          </p>
+                        </div>
+                        <!--modal footer-->
+                        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                          <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-ultimate')">
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-ultimate-backdrop"></div>
             </div>
         </div>
     </section>
